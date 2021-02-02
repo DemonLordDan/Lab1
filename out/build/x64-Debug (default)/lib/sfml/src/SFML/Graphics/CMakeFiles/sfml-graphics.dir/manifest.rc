@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+2 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/dantg/source/repos/Lab1/out/build/x64-Debug (default)/lib/sfml/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/embed.manifest"

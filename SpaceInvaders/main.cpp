@@ -4,8 +4,9 @@
 
 using namespace std;
 using namespace sf;
-Texture spritesheet;
-Sprite invader;
+
+sf::Texture spritesheet;
+sf::Sprite invader;
 
 void Load() {
     if (!spritesheet.loadFromFile("res/img/invaders_sheet.png")) {

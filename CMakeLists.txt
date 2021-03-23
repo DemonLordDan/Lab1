@@ -42,3 +42,14 @@ set_target_properties(SpaceInvaders
 )
 add_dependencies(SpaceInvaders copy_resources)
 
+### Tile Engine ###
+file(GLOB_RECURSE SOURCES TileEngine/*.cpp TileEngine/*.h)
+add_executable(TileEngine ${SOURCES})
+target_include_directories(TileEngine SYSTEM PRIVATE ${SFML_INCS})
+target_link_libraries(TileEngine sfml-graphics)
+set_target_properties(TileEngine 
+    PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY
+    ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$(Configuration)
+)
+add_dependencies(TileEngine copy_resources)
+

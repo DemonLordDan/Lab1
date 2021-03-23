@@ -91,10 +91,10 @@ void Update(RenderWindow& window) {
     }
     else {
         if (Keyboard::isKeyPressed(controls[2])) {
-            direction1P--;
+            direction2P--;
         }
         if (Keyboard::isKeyPressed(controls[3])) {
-            direction1P++;
+            direction2P++;
         }
     }
     paddles[0].move(0, direction1P * paddleSpeed * dt);

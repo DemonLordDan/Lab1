@@ -22,3 +22,15 @@ Player::Player()
 void Player::Render(sf::RenderWindow& window) const {
     window.draw(*_shape);
 }
+
+int main() {
+    RenderWindow window(sf::VideoMode(gameWidth, gameHeight), "SFML works!");
+    Load();
+    while (window.isOpen()) {
+        window.clear();
+        Update(window);
+        Render(window);
+        window.display();
+    }
+    return 0;
+}
